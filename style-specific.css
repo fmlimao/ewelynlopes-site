@@ -142,7 +142,7 @@
     margin-bottom: 30px;
 }
 
-.resume > li {
+.resume>li {
     position: relative;
     border: 1px solid #eee;
     border-left: 2px solid #E48162;
@@ -154,11 +154,11 @@
     transition-timing-function: ease;
 }
 
-.resume > li:last-child {
+.resume>li:last-child {
     margin-bottom: 0;
 }
 
-.resume > li:before {
+.resume>li:before {
     display: block;
     content: "";
 
@@ -173,7 +173,7 @@
     transition: transform 300ms ease;
 }
 
-.resume > li:after {
+.resume>li:after {
     display: block;
     content: "";
 
@@ -189,7 +189,7 @@
     transition: transform 300ms ease;
 }
 
-.resume > li:hover {
+.resume>li:hover {
     box-shadow: 0 8px 10px 0px rgba(0, 0, 0, .1);
     -moz-transform: translateX(0px) translateY(-4px);
     -webkit-transform: translateX(0px) translateY(-4px);
@@ -198,8 +198,8 @@
     transform: translateX(0px) translateY(-4px);
 }
 
-.resume > li:hover:before,
-.resume > li:hover:after {
+.resume>li:hover:before,
+.resume>li:hover:after {
     -moz-transform: translateX(0px) translateY(4px);
     -webkit-transform: translateX(0px) translateY(4px);
     -o-transform: translateX(0px) translateY(4px);
@@ -207,22 +207,22 @@
     transform: translateX(0px) translateY(4px);
 }
 
-.resume > li h4 {
+.resume>li h4 {
     margin-bottom: 15px;
 }
 
-.resume > li h4 span.resume-title {
+.resume>li h4 span.resume-title {
     display: block;
 }
 
-.resume > li h4 span.resume-at {
+.resume>li h4 span.resume-at {
     font-weight: normal;
     padding-right: 8px;
     color: #E48162;
     font-size: 12px;
 }
 
-.resume > li h4 span.resume-org {
+.resume>li h4 span.resume-org {
     font-weight: normal;
     border-left: 1px solid #aaa;
     padding-left: 8px;
@@ -230,7 +230,7 @@
     font-size: 12px;
 }
 
-.resume > li p {
+.resume>li p {
     margin: 0;
 }
 
@@ -311,4 +311,16 @@
     padding: 30px 0;
     text-align: center;
     color: #aaa;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #ccc;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #E48162;
 }
