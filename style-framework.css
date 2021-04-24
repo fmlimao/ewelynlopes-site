@@ -1,0 +1,127 @@
+/* ------------------------------ */
+/* ---------- FRAMEWORK --------- */
+/* ------------------------------ */
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media screen and (min-width: 1060px) {
+    .container {
+        width: 1030px;
+        margin: auto;
+    }
+}
+
+.box {
+    margin-bottom: 60px;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px -4px rgba(0, 0, 0, .2);
+    overflow: hidden;
+}
+
+.box .box-header {
+    background-color: #E48162;
+    background-image: url(./images/sp_main_bg.png);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 30px;
+    /* border-radius: 16px 16px 0 0; */
+    color: #fff;
+    text-align: center;
+}
+
+.box .box-header h1 {
+    font-size: 44px;
+}
+
+.box .box-header h2 {
+    font-size: 33px;
+}
+
+.box .box-content {
+    background-color: #fff;
+    padding: 30px;
+    /* border-radius: 0 0 16px 16px; */
+}
+
+.box .box-content h3 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.box .box-footer {
+    background-color: #aaa;
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.text-green {
+    color: #E48162;
+}
+
+.text-gray {
+    color: #aaa;
+}
+
+.btn {
+    /* E48162 */
+    /* F4E281 */
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #E48162;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #E48162;
+    font-size: 16px;
+    transition-property: background, border, color;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+}
+
+.btn:hover {
+    background-color: #F4E281;
+    border-color: #F4E281;
+    color: #E48162;
+}
+
+.btn.btn-fill {
+    background-color: #F4E281;
+    border-color: #F4E281;
+    color: #E48162;
+}
+
+.btn.btn-fill:hover {
+    background-color: #E48162;
+    border-color: #E48162;
+    color: #fff;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.progress-bar {
+    background-color: #eee;
+    border: 1px solid #E48162;
+    height: 10px;
+}
+
+.progress-bar div {
+    background-color: #E48162;
+    height: 100%;
+}
